@@ -1,0 +1,20 @@
+.home-page{
+    padding-inline: 20px;
+    overflow-y: hidden;
+
+}
+.home-page .container-fluid{
+    box-sizing: border-box;
+    background-color:blue;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    color: white;
+}
+
+.home-page .container-fluid .flow{
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

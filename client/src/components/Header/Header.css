@@ -1,0 +1,44 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header .navbar .logo-name {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header .navbar .logo-name span {
+  color: blue;
+}
+
+header .navbar .navbar-nav .nav-item a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+}
+header .navbar .navbar-nav .nav-item a:hover {
+  color: blue;
+}
+header .navbar .navbar-nav .nav-item a svg {
+  margin-bottom: 3px;
+  margin-right: 1px;
+}
+
+/* Responsive Navbar Styles */
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .logo-name {
+    font-size: 16px;
+  }
+}
