@@ -3,6 +3,7 @@ header {
   top: 0;
   background-color: aliceblue;
   left: 0;
+  z-index: 1000;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 header .navbar .logo-name {
@@ -30,7 +31,9 @@ header .navbar .navbar-nav .nav-item a svg {
   margin-bottom: 3px;
   margin-right: 1px;
 }
-
+header .navbar .navbar-nav .nav-item .userName{
+  text-transform: capitalize;
+}
 /* Responsive Navbar Styles */
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {

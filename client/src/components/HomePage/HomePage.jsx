@@ -1,11 +1,14 @@
 import Flow from "../Flow/Flow";
 import { Dropdown } from "react-bootstrap";
 import './HomePage.css'
+import  Header from '../Header/Header'
 export default function HomePage() {
   return (
+    <>
+    <Header></Header>
       <div className="home-page">
         <div className="container-fluid">
-          <div className="row mt-4">
+          <div className="row">
             <div className="col">
               <h4>Task For Mern Stack</h4>
               <p>Click on the block to configure and add it in sequence</p>
@@ -38,12 +41,13 @@ export default function HomePage() {
             </div>
           </div>
           <div className="row">
-            <div className="col flow">
+            <div className="col">
               <Flow></Flow>
             </div>
             <div className=""></div>
           </div>
         </div>
       </div>
+    </>
   );
 }

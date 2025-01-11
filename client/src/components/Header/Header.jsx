@@ -1,6 +1,7 @@
 import "./Header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 export default function Header() {
+  const userName = sessionStorage.getItem('userName')
   return (
     <header>
       <nav className="navbar navbar-expand-lg py-1  border">
@@ -117,7 +118,7 @@ export default function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="">User 1</a>
+              <a className="userName">{userName}</a>
             </li>
           </ul>
         </div>

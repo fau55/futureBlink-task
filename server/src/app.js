@@ -11,6 +11,8 @@ const secretKey = process.env.JWT_SECRET_KEY;
 const mongoose = require('mongoose');
 // Models 
 const User = require('./Models/user.js')
+const Template = require('./Models/template.js');
+
 
 // Headers issue
 app.use(bodyParser.json());
@@ -111,7 +113,34 @@ app.post('/login', async (req, res) => {
     }
 }
 )
+// api endpoint to get all template
+app.get('/template/get-all', (req, res) => {
+    Template.find().then((data) => {
+        res.status(200).json({
+            msg: 'all templates fetched!!',
+            templates: data
+        })
 
+    })
+})
+// api endpoint to add templates 
+app.post('/template/add', (req, res) => {
+    try {
+        const { title, subject, body } = req.body;
+        const newTemplate = new Template({
+            title,
+            subject,
+            body
+        });
+        newTemplate.save().then(() => {
+            res.status(200).json({
+                msg: 'template Added'
+            })
+        })
+    } catch (error) {
+        res.status(500).json({ msg: 'Error adding template', error: error.message });
+    }
+})
 agenda.define('send email', async (job) => {
     const { to, subject, body } = job.attrs.data;
     await transporter.sendMail({

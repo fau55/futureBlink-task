@@ -1,0 +1,54 @@
+.flow{
+    width: 90vw;
+    height: 500px;
+    margin-top: 30px;
+    background-color: yellow;
+}
+
+.flow .react-flow__node{
+    background-color: blue;
+    color: rgb(80, 0, 0);
+}
+
+.flow  h5{
+    margin-bottom: 0px;
+}
+.flow  h6{
+    margin-bottom: 0px;
+}
+
+.modal .modal-dialog .modal-content{
+    width: 800px;
+    margin: auto !important;
+
+}
+.modal .modal-dialog .modal-content p{
+    font-size: 12px;
+    margin: 0;
+}
+.modal .modal-dialog .modal-content h6{
+    margin: 0;
+}
+.modal .modal-dialog .modal-content .card{
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+.modal .modal-dialog .modal-content .card .svg-div{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.modal .modal-dialog .modal-content .buttons-body{
+    border: 1px solid rgb(118, 118, 118);
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.modal .modal-dialog .modal-content .list-body{
+height: 400px;
+}
